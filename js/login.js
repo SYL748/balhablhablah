@@ -2,7 +2,7 @@ document.getElementById("login-button").addEventListener("click", function (even
     const userName = document.getElementById("userName").value;
     const pwd = document.getElementById("pwd").value;
 
-    if (userName === "yuri" && pwd === "meow") {
+    if (userName === "兔子" && pwd === "meow") {
         event.preventDefault();
         const form = document.querySelector("form");
         form.style.transition = "opacity 0.5s ease";
