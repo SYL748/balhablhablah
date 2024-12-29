@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-weight: 300;
+}
+
+h1 {
+    color: rgb(54, 62, 202);
+    margin-bottom: 20px; /* Add space between the text and the image */
+}
+
+body,
+html {
+    background: linear-gradient(135deg, #89cff0, #ff7eb3);
+    font-family: "Microsoft YaHei", sans-serif;
+    color: white;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+div.apple {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+div.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+div img {
+    width: 300px;
+    height: auto;
+}
+
+.meow {
+    z-index: 2;
+}
+
+/* Play Music Button */
+button.play-music {
+    position: absolute;
+    top: 20px; /* Distance from the top of the screen */
+    right: 20px; /* Distance from the right of the screen */
+    background-color: #ff7eb3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    z-index: 1000; /* Ensure it's above other elements */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+button.play-music:hover {
+    background-color: #ff4081;
+}
+.meow {
+    z-index: 2;
+}

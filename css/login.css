@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-weight: 300;
+}
+
+body,
+html {
+    font-family: "Microsoft YaHei", sans-serif;
+    color: white;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+::placeholder {
+    font-family: "Microsoft YaHei", sans-serif;
+    color: white;
+    font-weight: 300;
+    opacity: 1;
+}
+
+.wrapper {
+    background: linear-gradient(135deg, #89cff0, #ff7eb3);
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper.form-success .container h1 {
+    transform: translateY(85px);
+    transition: transform 1s ease-in-out;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.container h1 {
+    font-size: 40px;
+    font-weight: 200;
+    transition: transform 1s ease-in-out;
+}
+
+form {
+    padding: 20px 0;
+    position: relative;
+    z-index: 2;
+}
+
+form input {
+    outline: none;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 250px;
+    border-radius: 3px;
+    padding: 10px 15px;
+    margin: 0 auto 10px;
+    display: block;
+    text-align: center;
+    font-family: "Microsoft YaHei", sans-serif;
+    font-size: 18px;
+    color: white;
+    transition: background-color 0.25s, width 0.25s;
+}
+
+form input:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+form input:focus {
+    background-color: white;
+    width: 300px;
+    color: #ee9ca7;
+    transition: background-color 0.25s, width 0.25s, color 0.25s;
+}
+
+form button {
+    outline: none;
+    background-color: white;
+    font-family: "Microsoft YaHei", sans-serif;
+    border: none;
+    padding: 10px 15px;
+    color: #ee9ca7;
+    border-radius: 3px;
+    width: 250px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.25s;
+}
+
+form button:hover {
+    background-color: #f5f7f9;
+}

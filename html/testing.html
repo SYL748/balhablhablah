@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/bubbles.css" />
+    <link rel="stylesheet" href="../css/testing.css" />
+</head>
+<body>
+    <div class="apple">
+        <div class="content">
+            <h1>测试版本</h1>
+            <img class="meow" src="../images/dd.gif" alt="gif">
+        </div>
+    </div>
+    <audio id="myAudio" autoplay muted control loop>
+        <source src="../mus/hajimi.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="play-music" id="playButton">▶ Play Music</button>
+    <script>
+        document.body.addEventListener('click', () => {
+            const audio = document.getElementById('myAudio');
+            audio.muted = false;
+            audio.play();
+        });
+    </script>
+    <ul class="bg-bubbles">
+        <li><img src="../images/aa.png" alt="Image A"></li>
+        <li><img src="../images/bb.png" alt="Image B"></li>
+        <li><img src="../images/cc.png" alt="Image C"></li>
+        <li><img src="../images/aa.png" alt="Image A"></li>
+        <li><img src="../images/bb.png" alt="Image B"></li>
+        <li><img src="../images/cc.png" alt="Image C"></li>
+        <li><img src="../images/aa.png" alt="Image A"></li>
+        <li><img src="../images/bb.png" alt="Image B"></li>
+        <li><img src="../images/cc.png" alt="Image C"></li>
+    </ul>
+</body>
+</html>
